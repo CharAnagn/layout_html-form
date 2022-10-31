@@ -11,3 +11,7 @@
 .field-group {
   margin-bottom: 20px;
 }
+
+.cats {
+  display: inline;
+}

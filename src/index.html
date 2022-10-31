@@ -12,7 +12,10 @@
   </head>
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form
+
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
 
       <fieldset class="field-group">
 
@@ -118,24 +121,32 @@
 
         <legend>Any interesting fact about you?</legend>
 
-        <label for="cats" class="form-field">
+        <label class="form-field">
           Do you love cats?
 
-          <input
-            type="radio"
-            name="cats"
-            value="yes"
-          >
+          <label for="cats_yes" class="form-field cats">
+            <input
+              type="radio"
+              name="cats"
+              value="yes"
+              id="cats_yes"
+            >
             Yes
 
-          <input
-            type="radio"
-            name="cats"
-            value="no"
-          >
+          </label>
+
+          <label for="cats_no" class="form-field cats">
+            <input
+              type="radio"
+              name="cats"
+              value="no"
+              id="cats_no"
+            >
             No
+          </label>
 
         </label>
+
 
         <label for="color" class="form-field">
           What is your favorite color?
@@ -166,11 +177,12 @@
             name="favorite_car"
             multiple
             required
-            id="brand">
+            id="brand"
+          >
 
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
 
           </select>
 
